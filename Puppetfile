@@ -34,3 +34,13 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "iterm2",     "1.0.2"
+github "macvim",     "1.0.0"
+github "virtualbox", "1.0.1"
+github "vagrant",    "2.0.7"
+github "chrome",     "1.1.1"
+github "sequel_pro", "1.0.0"
+github "vlc",        "1.0.3"
+github "openoffice", "1.1.0"
+github "keepassx",   "1.1.0"
