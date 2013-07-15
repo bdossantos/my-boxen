@@ -21,4 +21,8 @@ class people::bdossantos {
   class { 'nodejs::global': 
     version => 'v0.10.5',
   }
+
+  package { ['wget', 'ruby-build', ]:
+    ensure => latest,
+  }
 }
