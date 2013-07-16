@@ -26,7 +26,11 @@ class people::bdossantos {
     version => 'v0.10.5',
   }
 
-  package { ['wget', 'ruby-build', ]:
+  $useful = [
+    'wget', 'ruby-build', 'htop-osx', 'curl', 'ssh-copy-id', 'pwgen', 'gsl',
+  ]
+
+  package { $useful:
     ensure => latest,
   }
 }
