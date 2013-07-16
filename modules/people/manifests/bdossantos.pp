@@ -9,6 +9,10 @@ class people::bdossantos {
   include openoffice
   include keepassx
   include go
+  include flux
+  include dropbox
+  include imageoptim
+  include googledrive
 
   $home     = "/Users/${::luser}"
   $my       = "${home}/Code"
