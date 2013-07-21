@@ -13,6 +13,7 @@ class people::bdossantos {
   include dropbox
   include imageoptim
   include googledrive
+  include nike_plus_connect
 
   $home     = "/Users/${::luser}"
   $my       = "${home}/Code"
