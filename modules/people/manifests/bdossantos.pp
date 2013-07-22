@@ -5,11 +5,13 @@ class people::bdossantos {
   include vagrant
   include chrome
   include chrome::canary
+  include python
+  include go
   include sequel_pro
   include vlc
   include openoffice
+  include gimp
   include keepassx
-  include go
   include flux
   include dropbox
   include imageoptim
