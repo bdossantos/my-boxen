@@ -4,6 +4,7 @@ class people::bdossantos {
   include virtualbox
   include vagrant
   include chrome
+  include chrome::canary
   include sequel_pro
   include vlc
   include openoffice
