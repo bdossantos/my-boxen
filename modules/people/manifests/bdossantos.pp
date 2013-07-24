@@ -3,6 +3,7 @@ class people::bdossantos {
   include macvim
   include virtualbox
   include vagrant
+  include packer
   include chrome
   include chrome::canary
   include firefox
