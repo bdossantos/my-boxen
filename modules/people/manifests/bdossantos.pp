@@ -5,6 +5,7 @@ class people::bdossantos {
   include vagrant
   include chrome
   include chrome::canary
+  include firefox
   include python
   include go
   include sequel_pro
