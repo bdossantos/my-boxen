@@ -17,6 +17,7 @@ class people::bdossantos {
   include flux
   include dropbox
   include imageoptim
+  include xz
   include imagemagick
   include phantomjs
   include phantomjs::1_9_0
