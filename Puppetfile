@@ -57,3 +57,4 @@ github "nike_plus_connect", "0.0.1", :repo => "bdossantos/puppet-module-nike_plu
 github "python",            "1.1.1"
 github "gimp",              "1.0.0"
 github "imagemagick",       "1.2.0"
+github "phantomjs",         "2.0.2"

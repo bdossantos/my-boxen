@@ -18,6 +18,8 @@ class people::bdossantos {
   include dropbox
   include imageoptim
   include imagemagick
+  include phantomjs
+  include phantomjs::1_9_0
   include googledrive
   include nike_plus_connect
 
@@ -31,6 +33,10 @@ class people::bdossantos {
 
   class { 'nodejs::global': 
     version => 'v0.10.5',
+  }
+
+  class { 'phantomjs::global':
+    version => '1.9.0',
   }
 
   $useful = [
