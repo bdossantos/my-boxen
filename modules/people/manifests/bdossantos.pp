@@ -17,6 +17,7 @@ class people::bdossantos {
   include flux
   include dropbox
   include imageoptim
+  include imagemagick
   include googledrive
   include nike_plus_connect
 
