@@ -48,4 +48,6 @@ class people::bdossantos {
   package { $useful:
     ensure => latest,
   }
+
+  include osx::finder::empty_trash_securely
 }
