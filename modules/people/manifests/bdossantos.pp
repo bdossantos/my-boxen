@@ -32,7 +32,7 @@ class people::bdossantos {
     source  => 'bdossantos/dotfiles',
   }
 
-  class { 'nodejs::global': 
+  class { 'nodejs::global':
     version => 'v0.10.5',
   }
 
