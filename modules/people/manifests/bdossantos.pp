@@ -50,4 +50,8 @@ class people::bdossantos {
   }
 
   include osx::finder::empty_trash_securely
+
+  class { 'osx::global::natural_mouse_scrolling':
+    enabled => false,
+  }
 }
