@@ -1,6 +1,7 @@
 class people::bdossantos {
   include iterm2::stable
   include macvim
+  include vundle
   include virtualbox
   include vagrant
   include packer

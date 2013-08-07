@@ -39,6 +39,7 @@ github "xquartz",    "1.1.0"
 
 github "iterm2",            "1.0.2"
 github "macvim",            "1.0.0"
+github "vundle",            "0.0.1", :repo => "bdossantos/puppet-vundle"
 github "virtualbox",        "1.0.1"
 github "vagrant",           "2.0.9"
 github "packer",            "1.0.2"
