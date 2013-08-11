@@ -10,6 +10,7 @@ class people::bdossantos {
   include firefox
   include python
   include go
+  include go::1_1_1
   include sequel_pro
   include vlc
   include openoffice
@@ -35,6 +36,10 @@ class people::bdossantos {
 
   class { 'nodejs::global':
     version => 'v0.10.5',
+  }
+
+  class { 'go::global':
+    version => '1.1.1'
   }
 
   class { 'phantomjs::global':
