@@ -34,6 +34,14 @@ class people::bdossantos {
     source  => 'bdossantos/dotfiles',
   }
 
+  class { 'ruby':
+    chruby_rubies => "${home}/.rubies",
+  }
+
+  class { 'ruby::global':
+    version => '2.0.0',
+  }
+
   class { 'nodejs::global':
     version => 'v0.10.5',
   }
