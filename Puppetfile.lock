@@ -184,6 +184,11 @@ GITHUBTARBALL
     xz (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
+
+GITHUBTARBALL
   remote: cprice404/puppetlabs-inifile
   specs:
     inifile (0.9.0)
@@ -245,4 +250,5 @@ DEPENDENCIES
   vundle (= 0.0.1)
   xquartz (= 1.1.0)
   xz (= 1.0.0)
+  zsh (= 1.0.0)
 

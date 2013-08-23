@@ -1,5 +1,6 @@
 class people::bdossantos {
   include iterm2::stable
+  include zsh
   include macvim
   include vundle
   include virtualbox
