@@ -28,16 +28,18 @@ class people::bdossantos {
   include vagrant
   include packer
 
-  include sequel_pro
+  # image/video
   include vlc
-  include openoffice
   include gimp
+  include imageoptim
+  include imagemagick
+
+  include sequel_pro
+  include openoffice
   include keepassx
   include flux
   include dropbox
-  include imageoptim
   include xz
-  include imagemagick
   include googledrive
   include nike_plus_connect
 
