@@ -12,6 +12,20 @@ class people::bdossantos {
   include iterm2::stable
   include zsh
 
+  repository { $dotfiles:
+    source  => 'bdossantos/dotfiles',
+  }
+
+  repository { 'oh-my-zsh':
+    source => 'robbyrussell/oh-my-zsh',
+    path   => "${home}/.oh-my-zsh",
+  } ->
+
+  repository { 'pure':
+    source => 'sindresorhus/pure',
+    path   => "${home}/.oh-my-zsh/custom/pure",
+  }
+
   # editor
   include macvim
   include vundle
@@ -47,20 +61,6 @@ class people::bdossantos {
   include keepassx
   include flux
   include xz
-
-  repository { $dotfiles:
-    source  => 'bdossantos/dotfiles',
-  }
-
-  repository { 'oh-my-zsh':
-    source => 'robbyrussell/oh-my-zsh',
-    path   => "${home}/.oh-my-zsh",
-  } ->
-
-  repository { 'pure':
-    source => 'sindresorhus/pure',
-    path   => "${home}/.oh-my-zsh/custom/pure",
-  }
 
   class { 'ruby':
     chruby_rubies => "${home}/.rubies",
