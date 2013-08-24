@@ -23,9 +23,11 @@ class people::bdossantos {
   include phantomjs
   include phantomjs::1_9_0
 
+  # virtualisation
   include virtualbox
   include vagrant
   include packer
+
   include sequel_pro
   include vlc
   include openoffice
