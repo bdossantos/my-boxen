@@ -7,6 +7,7 @@ class people::bdossantos {
   include chrome
   include chrome::canary
   include firefox
+  include opera
 
   # terminal
   include iterm2::stable

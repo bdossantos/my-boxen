@@ -124,6 +124,11 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-opera
+  specs:
+    opera (0.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
     osx (1.6.0)
@@ -234,6 +239,7 @@ DEPENDENCIES
   nodejs (= 3.2.9)
   openoffice (= 1.1.0)
   openssl (= 1.0.0)
+  opera (= 0.1.0)
   osx (= 1.6.0)
   packer (= 1.0.2)
   phantomjs (= 2.0.2)
