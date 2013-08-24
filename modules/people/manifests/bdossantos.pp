@@ -3,6 +3,11 @@ class people::bdossantos {
   $my       = "${home}/Code"
   $dotfiles = "${my}/dotfiles"
 
+  # browsers
+  include chrome
+  include chrome::canary
+  include firefox
+
   include iterm2::stable
   include zsh
   include macvim
@@ -10,9 +15,6 @@ class people::bdossantos {
   include virtualbox
   include vagrant
   include packer
-  include chrome
-  include chrome::canary
-  include firefox
   include python
   include go
   include go::1_1_1
