@@ -34,8 +34,10 @@ class people::bdossantos {
   include imageoptim
   include imagemagick
 
-  include sequel_pro
+  # office
   include openoffice
+
+  include sequel_pro
   include keepassx
   include flux
   include dropbox
