@@ -8,8 +8,10 @@ class people::bdossantos {
   include chrome::canary
   include firefox
 
+  # terminal
   include iterm2::stable
   include zsh
+
   include macvim
   include vundle
   include virtualbox
