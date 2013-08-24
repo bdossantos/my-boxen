@@ -37,12 +37,14 @@ class people::bdossantos {
   # office
   include openoffice
 
+  # cloud drive
+  include dropbox
+  include googledrive
+
   include sequel_pro
   include keepassx
   include flux
-  include dropbox
   include xz
-  include googledrive
   include nike_plus_connect
 
   repository { $dotfiles:
