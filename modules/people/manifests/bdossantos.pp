@@ -41,11 +41,12 @@ class people::bdossantos {
   include dropbox
   include googledrive
 
+  # misc
+  include nike_plus_connect
   include sequel_pro
   include keepassx
   include flux
   include xz
-  include nike_plus_connect
 
   repository { $dotfiles:
     source  => 'bdossantos/dotfiles',
