@@ -35,6 +35,16 @@ class people::bdossantos {
     source  => 'bdossantos/dotfiles',
   }
 
+  repository { 'oh-my-zsh':
+    source => 'robbyrussell/oh-my-zsh',
+    path   => "${home}/.oh-my-zsh",
+  } ->
+
+  repository { 'pure':
+    source => 'sindresorhus/pure',
+    path   => "${home}/.oh-my-zsh/custom/pure",
+  }
+
   class { 'ruby':
     chruby_rubies => "${home}/.rubies",
   }
