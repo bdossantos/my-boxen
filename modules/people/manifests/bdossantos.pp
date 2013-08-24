@@ -16,12 +16,16 @@ class people::bdossantos {
   include macvim
   include vundle
 
-  include virtualbox
-  include vagrant
-  include packer
+  # programming
   include python
   include go
   include go::1_1_1
+  include phantomjs
+  include phantomjs::1_9_0
+
+  include virtualbox
+  include vagrant
+  include packer
   include sequel_pro
   include vlc
   include openoffice
@@ -32,8 +36,6 @@ class people::bdossantos {
   include imageoptim
   include xz
   include imagemagick
-  include phantomjs
-  include phantomjs::1_9_0
   include googledrive
   include nike_plus_connect
 
