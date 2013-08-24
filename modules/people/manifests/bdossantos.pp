@@ -1,4 +1,8 @@
 class people::bdossantos {
+  $home     = "/Users/${::luser}"
+  $my       = "${home}/Code"
+  $dotfiles = "${my}/dotfiles"
+
   include iterm2::stable
   include zsh
   include macvim
@@ -26,10 +30,6 @@ class people::bdossantos {
   include phantomjs::1_9_0
   include googledrive
   include nike_plus_connect
-
-  $home     = "/Users/${::luser}"
-  $my       = "${home}/Code"
-  $dotfiles = "${my}/dotfiles"
 
   repository { $dotfiles:
     source  => 'bdossantos/dotfiles',
