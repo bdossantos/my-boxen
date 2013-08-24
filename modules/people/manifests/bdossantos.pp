@@ -37,6 +37,26 @@ class people::bdossantos {
   include phantomjs
   include phantomjs::1_9_0
 
+  class { 'ruby':
+    chruby_rubies => "${home}/.rubies",
+  }
+
+  class { 'ruby::global':
+    version => '2.0.0',
+  }
+
+  class { 'nodejs::global':
+    version => 'v0.10.5',
+  }
+
+  class { 'go::global':
+    version => '1.1.1'
+  }
+
+  class { 'phantomjs::global':
+    version => '1.9.0',
+  }
+
   # virtualisation
   include virtualbox
   include vagrant
@@ -61,26 +81,6 @@ class people::bdossantos {
   include keepassx
   include flux
   include xz
-
-  class { 'ruby':
-    chruby_rubies => "${home}/.rubies",
-  }
-
-  class { 'ruby::global':
-    version => '2.0.0',
-  }
-
-  class { 'nodejs::global':
-    version => 'v0.10.5',
-  }
-
-  class { 'go::global':
-    version => '1.1.1'
-  }
-
-  class { 'phantomjs::global':
-    version => '1.9.0',
-  }
 
   $useful = [
     'wget', 'ruby-build', 'htop-osx', 'curl', 'ssh-copy-id', 'pwgen', 'gsl',
