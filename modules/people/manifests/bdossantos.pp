@@ -91,6 +91,7 @@ class people::bdossantos {
     ensure => latest,
   }
 
+  # osx
   include osx::finder::empty_trash_securely
 
   class { 'osx::global::natural_mouse_scrolling':
