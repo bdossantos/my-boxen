@@ -69,6 +69,10 @@ class people::bdossantos {
   include imageoptim
   include imagemagick
 
+  package { 'ffmpeg':
+    ensure => latest,
+  }
+
   # office
   include openoffice
 
