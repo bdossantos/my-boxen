@@ -89,7 +89,7 @@ class people::bdossantos {
 
   $useful = [
     'wget', 'ruby-build', 'htop-osx', 'curl', 'ssh-copy-id', 'pwgen', 'gsl',
-    'zsh-syntax-highlighting',
+    'zsh-syntax-highlighting', 'watch',
   ]
 
   package { $useful:
