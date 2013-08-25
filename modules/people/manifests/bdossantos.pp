@@ -98,6 +98,8 @@ class people::bdossantos {
 
   # osx
   include osx::finder::empty_trash_securely
+  include osx::global::key_repeat_delay
+  include osx::global::key_repeat_rate
 
   class { 'osx::global::natural_mouse_scrolling':
     enabled => false,
