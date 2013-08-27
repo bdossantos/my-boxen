@@ -23,6 +23,7 @@ class people::bdossantos {
   } ->
 
   repository { 'pure':
+    ensure => 'origin/master',
     source => 'sindresorhus/pure',
     path   => "${home}/.oh-my-zsh/custom/pure",
   }
