@@ -164,6 +164,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-tmux
+  specs:
+    tmux (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (2.0.9)
@@ -250,6 +255,7 @@ DEPENDENCIES
   sequel_pro (= 1.0.0)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  tmux (= 1.0.2)
   vagrant (= 2.0.9)
   virtualbox (= 1.0.1)
   vlc (= 1.0.3)

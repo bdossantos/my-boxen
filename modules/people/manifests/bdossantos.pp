@@ -12,6 +12,7 @@ class people::bdossantos {
   # terminal
   include iterm2::stable
   include zsh
+  include tmux
 
   repository { $dotfiles:
     source  => 'bdossantos/dotfiles',
