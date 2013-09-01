@@ -50,7 +50,7 @@ class people::bdossantos {
     version => 'v0.10.5',
   }
 
-  file { "${BOXEN_ENV_DIR}/goenv.sh":
+  file { "${::BOXEN_ENV_DIR}/goenv.sh":
     ensure => absent,
   } ->
 
