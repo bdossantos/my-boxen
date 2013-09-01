@@ -15,7 +15,8 @@ class people::bdossantos {
   include tmux
 
   repository { $dotfiles:
-    source  => 'bdossantos/dotfiles',
+    source => 'bdossantos/dotfiles',
+    notify => Exec['Install dotfiles'],
   }
 
   repository { 'oh-my-zsh':
@@ -27,6 +28,14 @@ class people::bdossantos {
     ensure => 'origin/master',
     source => 'sindresorhus/pure',
     path   => "${home}/.oh-my-zsh/custom/pure",
+  }
+
+  exec { 'Install dotfiles':
+    command     => 'sh install.sh',
+    cwd         => $dotfiles,
+    path        => $::path,
+    require     => Repository[$dotfiles],
+    refreshonly => true,
   }
 
   # editor
