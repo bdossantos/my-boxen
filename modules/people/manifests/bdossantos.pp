@@ -35,8 +35,6 @@ class people::bdossantos {
 
   # programming
   include python
-  include go
-  include go::1_1_1
   include phantomjs
   include phantomjs::1_9_0
 
@@ -52,8 +50,12 @@ class people::bdossantos {
     version => 'v0.10.5',
   }
 
-  class { 'go::global':
-    version => '1.1.1'
+  file { "${BOXEN_ENV_DIR}/goenv.sh":
+    ensure => absent,
+  } ->
+
+  package { 'go':
+    ensure => installed,
   }
 
   class { 'phantomjs::global':
