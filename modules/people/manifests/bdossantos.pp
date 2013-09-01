@@ -1,7 +1,7 @@
 class people::bdossantos {
   $home     = "/Users/${::luser}"
   $my       = "${home}/Code"
-  $dotfiles = "${my}/dotfiles"
+  $dotfiles = "${home}/.dotfiles"
 
   # browsers
   include chrome
