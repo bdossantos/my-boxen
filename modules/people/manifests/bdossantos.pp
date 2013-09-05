@@ -14,8 +14,10 @@ class people::bdossantos {
   include zsh
   include tmux
 
-  repository { $dotfiles:
+  repository { 'dotfiles':
+    ensure  => 'origin/master',
     source  => 'bdossantos/dotfiles',
+    path    => $dotfiles,
     notify  => Exec['Install dotfiles'],
     require => Package['stow'],
   }
