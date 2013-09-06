@@ -58,6 +58,12 @@ class people::bdossantos {
     version => '2.0.0',
   }
 
+  ruby::gem { 'gem install tmuxinator':
+    gem   => 'tmuxinator',
+    ruby  => '2.0.0',
+    #version => '~> 1.2.0'
+  }
+
   class { 'nodejs::global':
     version => 'v0.10.5',
   }
