@@ -26,7 +26,7 @@ github "homebrew",   "1.4.1"
 github "hub",        "1.0.3"
 github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.2"
-github "nodejs",     "3.2.9"
+github "nodejs",     "3.2.10"
 github "openssl",    "1.0.0"
 github "repository", "2.2.0"
 github "ruby",       "0.1.1", :repo => 'dgoodlad/puppet-chruby'
