@@ -65,7 +65,7 @@ class people::bdossantos {
   }
 
   class { 'nodejs::global':
-    version => 'v0.10.5',
+    version => 'v0.10.18',
   }
 
   file { "${::BOXEN_ENV_DIR}/goenv.sh":
