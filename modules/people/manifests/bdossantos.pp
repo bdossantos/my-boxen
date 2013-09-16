@@ -111,7 +111,7 @@ class people::bdossantos {
 
   $useful = [
     'wget', 'ruby-build', 'htop-osx', 'curl', 'ssh-copy-id', 'pwgen', 'gsl',
-    'zsh-syntax-highlighting', 'watch', 'stow', 'closure-compiler',
+    'zsh-syntax-highlighting', 'watch', 'stow', 'closure-compiler', 'pv',
     'htmlcompressor', 'moreutils', 'netcat',
   ]
 
