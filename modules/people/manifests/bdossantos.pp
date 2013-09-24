@@ -106,6 +106,7 @@ class people::bdossantos {
   # misc
   include nike_plus_connect
   include sequel_pro
+  include spectacle
   include keepassx
   include flux
   include xz

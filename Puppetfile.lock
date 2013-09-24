@@ -159,6 +159,11 @@ GITHUBTARBALL
     sequel_pro (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-spectacle
+  specs:
+    spectacle (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -253,6 +258,7 @@ DEPENDENCIES
   repository (= 2.2.0)
   ruby (= 0.1.1)
   sequel_pro (= 1.0.0)
+  spectacle (= 1.0.0)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   tmux (= 1.0.2)
