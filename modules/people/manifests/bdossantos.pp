@@ -115,7 +115,7 @@ class people::bdossantos {
     'wget', 'ruby-build', 'htop-osx', 'curl', 'ssh-copy-id', 'pwgen', 'gsl',
     'zsh-syntax-highlighting', 'watch', 'stow', 'closure-compiler', 'pv',
     'htmlcompressor', 'moreutils', 'netcat', 'nmap', 'colordiff', 'jq',
-    'ncftp',
+    'ncftp', 'spark',
   ]
 
   package { $useful:
