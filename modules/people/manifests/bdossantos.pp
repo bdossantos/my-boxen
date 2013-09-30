@@ -62,7 +62,11 @@ class people::bdossantos {
   ruby::gem { 'gem install tmuxinator':
     gem   => 'tmuxinator',
     ruby  => '2.0.0',
-    #version => '~> 1.2.0'
+  }
+
+  ruby::gem { 'gem install fpm':
+    gem   => 'fpm',
+    ruby  => '2.0.0',
   }
 
   class { 'nodejs::global':
