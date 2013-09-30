@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.0.3"
+github "boxen", "3.0.4"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -42,7 +42,7 @@ github "property_list_key", "0.1.0", :repo => "glarizza/puppet-property_list_key
 github "iterm2",            "1.0.2"
 github "macvim",            "1.0.0"
 github "vundle",            "0.0.1", :repo => "bdossantos/puppet-vundle"
-github "virtualbox",        "1.0.1"
+github "virtualbox",        "1.0.6"
 github "vagrant",           "2.0.12"
 github "packer",            "1.0.2"
 github "chrome",            "1.1.1"
@@ -50,7 +50,7 @@ github "firefox",           "1.1.3"
 github "opera",             "0.2.1"
 github "sequel_pro",        "1.0.0"
 github "vlc",               "1.0.3"
-github "openoffice",        "1.1.0"
+github "openoffice",        "1.2.0"
 github "keepassx",          "1.0.0"
 github "go",                "1.0.0"
 github "flux",              "1.0.0"

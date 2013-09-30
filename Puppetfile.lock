@@ -16,7 +16,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.0.3)
+    boxen (3.0.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -116,7 +116,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-openoffice
   specs:
-    openoffice (1.1.0)
+    openoffice (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -181,7 +181,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
-    virtualbox (1.0.1)
+    virtualbox (1.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-vlc
@@ -225,7 +225,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   autoconf (= 1.0.0)
-  boxen (= 3.0.3)
+  boxen (= 3.0.4)
   chrome (= 1.1.1)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.1)
@@ -247,7 +247,7 @@ DEPENDENCIES
   nginx (= 1.4.2)
   nike_plus_connect (= 0.0.1)
   nodejs (= 3.2.10)
-  openoffice (= 1.1.0)
+  openoffice (= 1.2.0)
   openssl (= 1.0.0)
   opera (= 0.2.1)
   osx (= 1.6.0)
@@ -263,7 +263,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   tmux (= 1.0.2)
   vagrant (= 2.0.12)
-  virtualbox (= 1.0.1)
+  virtualbox (= 1.0.6)
   vlc (= 1.0.3)
   vundle (= 0.0.1)
   xquartz (= 1.1.0)
