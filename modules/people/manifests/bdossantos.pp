@@ -69,6 +69,11 @@ class people::bdossantos {
     ruby  => '2.0.0',
   }
 
+  ruby::gem { 'gem install pomo':
+    gem   => 'pomo',
+    ruby  => '2.0.0',
+  }
+
   class { 'nodejs::global':
     version => 'v0.10.18',
   }
