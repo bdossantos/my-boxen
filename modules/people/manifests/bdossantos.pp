@@ -133,6 +133,12 @@ class people::bdossantos {
     ensure => latest,
   }
 
+  file { "${home}/tmp":
+    ensure => directory,
+    owner  => $::luser,
+    mode   => '1700',
+  }
+
   # osx
   include osx::finder::empty_trash_securely
   include osx::global::key_repeat_delay
