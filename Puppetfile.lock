@@ -9,11 +9,6 @@ GITHUBTARBALL
     vundle (0.0.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-autoconf
-  specs:
-    autoconf (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.0.4)
@@ -42,6 +37,11 @@ GITHUBTARBALL
   remote: boxen/puppet-flux
   specs:
     flux (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-foreman
+  specs:
+    foreman (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -224,13 +224,13 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
-  autoconf (= 1.0.0)
   boxen (= 3.0.4)
   chrome (= 1.1.1)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.1)
   firefox (= 1.1.3)
   flux (= 1.0.0)
+  foreman (= 1.0.0)
   gcc (= 2.0.1)
   gimp (= 1.0.0)
   git (= 1.3.2)
