@@ -136,7 +136,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-packer
   specs:
-    packer (1.0.2)
+    packer (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -251,7 +251,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   opera (= 0.2.1)
   osx (= 1.6.0)
-  packer (= 1.0.2)
+  packer (= 1.0.3)
   phantomjs (= 2.0.2)
   property_list_key (= 0.1.0)
   python (= 1.1.1)
