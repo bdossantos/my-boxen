@@ -176,7 +176,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (2.0.13)
+    vagrant (3.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
@@ -262,7 +262,7 @@ DEPENDENCIES
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   tmux (= 1.0.2)
-  vagrant (= 2.0.13)
+  vagrant (= 3.0.0)
   virtualbox (= 1.0.6)
   vlc (= 1.0.3)
   vundle (= 0.0.1)
