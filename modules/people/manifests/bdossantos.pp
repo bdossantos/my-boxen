@@ -74,6 +74,15 @@ class people::bdossantos {
     ruby  => '2.0.0',
   }
 
+  file { "${home}/.pomo":
+    ensure  => link,
+    target  => "${home}/Dropbox/.pomo",
+    require => [
+      Class['dropbox'],
+      Ruby::Gem['gem install pomo'],
+    ],
+  }
+
   class { 'nodejs::global':
     version => 'v0.10.18',
   }
