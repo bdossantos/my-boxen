@@ -91,7 +91,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.0.2)
+    iterm2 (1.0.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-keepassx
@@ -246,7 +246,7 @@ DEPENDENCIES
   imagemagick (= 1.2.0)
   imageoptim (= 0.0.2)
   inifile (= 1.0.0)
-  iterm2 (= 1.0.2)
+  iterm2 (= 1.0.4)
   keepassx (= 1.0.0)
   macvim (= 1.0.0)
   nginx (= 1.4.2)

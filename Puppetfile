@@ -56,7 +56,7 @@ github "xquartz",    "1.1.0"
 
 github "osx",               "2.0.0"
 github "property_list_key", "0.1.0", :repo => "glarizza/puppet-property_list_key"
-github "iterm2",            "1.0.2"
+github "iterm2",            "1.0.4"
 github "macvim",            "1.0.0"
 github "vundle",            "0.0.1", :repo => "bdossantos/puppet-vundle"
 github "virtualbox",        "1.0.6"
