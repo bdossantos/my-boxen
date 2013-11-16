@@ -74,6 +74,11 @@ class people::bdossantos {
     ruby  => '2.0.0',
   }
 
+  ruby::gem { 'gem install veewee':
+    gem  => 'veewee',
+    ruby => '2.0.0',
+  }
+
   file { "${home}/.pomo":
     ensure  => link,
     target  => "${home}/Dropbox/.pomo",
