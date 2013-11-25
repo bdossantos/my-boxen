@@ -51,32 +51,34 @@ class people::bdossantos {
   include phantomjs
   include phantomjs::1_9_0
 
+  $default_ruby_version = '2.0.0-p247'
+
+  Ruby::Gem {
+    ruby => $default_ruby_version,
+  }
+
   class { 'ruby':
     chruby_rubies => "${home}/.rubies",
   }
 
   class { 'ruby::global':
-    version => '2.0.0',
+    version => $default_ruby_version,
   }
 
   ruby::gem { 'gem install tmuxinator':
     gem   => 'tmuxinator',
-    ruby  => '2.0.0',
   }
 
   ruby::gem { 'gem install fpm':
     gem   => 'fpm',
-    ruby  => '2.0.0',
   }
 
   ruby::gem { 'gem install pomo':
     gem   => 'pomo',
-    ruby  => '2.0.0',
   }
 
   ruby::gem { 'gem install veewee':
     gem  => 'veewee',
-    ruby => '2.0.0',
   }
 
   file { "${home}/.pomo":
