@@ -51,14 +51,18 @@ class people::bdossantos {
   include phantomjs
   include phantomjs::1_9_0
 
-  $default_ruby_version = '2.0.0-p247'
+  class { 'ruby':
+    chruby_version    => '0.3.7',
+    rubybuild_version => 'v20131122.1',
+    chruby_rubies     => "${home}/.rubies",
+  }
+
+  $default_ruby_version = '2.0.0-p353'
+  ruby::version { $default_ruby_version: }
+  ruby::version { '1.9.3-p484': }
 
   Ruby::Gem {
     ruby => $default_ruby_version,
-  }
-
-  class { 'ruby':
-    chruby_rubies => "${home}/.rubies",
   }
 
   class { 'ruby::global':
