@@ -47,10 +47,11 @@ class people::bdossantos {
   include vundle
 
   # programming
-  include python
-  include phantomjs
-  include phantomjs::1_9_0
 
+  ## python
+  include python
+
+  ## ruby
   class { 'ruby':
     chruby_version    => '0.3.7',
     rubybuild_version => 'v20131122.1',
@@ -94,10 +95,12 @@ class people::bdossantos {
     ],
   }
 
+  ## node.js
   class { 'nodejs::global':
     version => 'v0.10.18',
   }
 
+  ## go
   file { "${::BOXEN_ENV_DIR}/goenv.sh":
     ensure => absent,
   } ->
@@ -105,6 +108,10 @@ class people::bdossantos {
   package { 'go':
     ensure => installed,
   }
+
+  ## phantomJS
+  include phantomjs
+  include phantomjs::1_9_0
 
   class { 'phantomjs::global':
     version => '1.9.0',
