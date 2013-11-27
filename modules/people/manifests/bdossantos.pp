@@ -52,7 +52,7 @@ class people::bdossantos {
   include python
 
   ## ruby
-  package { ['chruby', 'ruby-build', ]:
+  package { ['chruby', 'ruby-install', ]:
     ensure => latest,
   }
 
