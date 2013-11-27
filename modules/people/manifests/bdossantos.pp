@@ -52,6 +52,10 @@ class people::bdossantos {
   include python
 
   ## ruby
+  package { ['chruby', 'ruby-build', ]:
+    ensure => latest,
+  }
+
   class { 'ruby':
     chruby_version    => '0.3.7',
     rubybuild_version => 'v20131122.1',
@@ -148,11 +152,11 @@ class people::bdossantos {
   include xz
 
   $useful = [
-    'wget', 'ruby-build', 'htop-osx', 'curl', 'ssh-copy-id', 'pwgen', 'gsl',
+    'wget', 'coreutils', 'htop-osx', 'curl', 'ssh-copy-id', 'pwgen', 'gsl',
     'zsh-syntax-highlighting', 'watch', 'stow', 'closure-compiler', 'pv',
     'htmlcompressor', 'moreutils', 'netcat', 'nmap', 'colordiff', 'jq',
     'ncftp', 'spark', 'battery', 'tcpdump', 'cmake', 'readline', 'gnu-sed',
-    'coreutils', 'tree',
+    'tree',
   ]
 
   homebrew::tap { 'Goles/battery': } ->
