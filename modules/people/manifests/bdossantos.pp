@@ -56,38 +56,33 @@ class people::bdossantos {
     ensure => latest,
   }
 
-  class { 'ruby':
-    chruby_version    => '0.3.7',
-    rubybuild_version => 'v20131122.1',
-    chruby_rubies     => "${home}/.rubies",
+  file { "${home}/.rubies":
+    ensure => directory,
   }
 
-  $default_ruby_version = '2.0.0-p353'
-  ruby::version { $default_ruby_version: }
-  ruby::version { '1.9.3-p484': }
+  # yes, this define is not inside autoload module layout and a class
+  define ruby_install($ensure = 'present') {
+    $ruby = $name
+    $prefix = "${people::bdossantos::home}/.rubies"
 
-  Ruby::Gem {
-    ruby => $default_ruby_version,
+    exec { "ruby-install ${ruby}":
+      command   => "ruby-install -i ${prefix}/${ruby} ruby ${ruby}",
+      timeout   => 0,
+      creates   => "${prefix}/${ruby}",
+      user      => $::luser,
+      logoutput => 'on_failure',
+      cwd       => $prefix,
+      require   => File["${prefix}"],
+    }
   }
 
-  class { 'ruby::global':
-    version => $default_ruby_version,
+  ruby_install { ['2.0.0-p353', '1.9.3-p484', ]:
+    ensure => present,
   }
 
-  ruby::gem { 'gem install tmuxinator':
-    gem   => 'tmuxinator',
-  }
-
-  ruby::gem { 'gem install fpm':
-    gem   => 'fpm',
-  }
-
-  ruby::gem { 'gem install pomo':
-    gem   => 'pomo',
-  }
-
-  ruby::gem { 'gem install veewee':
-    gem  => 'veewee',
+  package { ['bundler', 'tmuxinator', 'fpm', 'pomo', 'veewee', ]:
+    ensure   => present,
+    provider => 'gem',
   }
 
   file { "${home}/.pomo":
@@ -95,7 +90,7 @@ class people::bdossantos {
     target  => "${home}/Dropbox/.pomo",
     require => [
       Class['dropbox'],
-      Ruby::Gem['gem install pomo'],
+      Package['pomo'],
     ],
   }
 
