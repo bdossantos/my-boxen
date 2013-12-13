@@ -24,6 +24,7 @@ class people::bdossantos {
   }
 
   repository { 'oh-my-zsh':
+    ensure => 'origin/master',
     source => 'robbyrussell/oh-my-zsh',
     path   => "${home}/.oh-my-zsh",
   } ->
