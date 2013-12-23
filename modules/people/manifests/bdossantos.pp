@@ -96,8 +96,8 @@ class people::bdossantos {
   }
 
   ## node.js
-  class { 'nodejs::global':
-    version => 'v0.10.18',
+  package { 'nodejs':
+    ensure => latest,
   }
 
   ## go
