@@ -131,7 +131,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (2.0.0)
+    osx (2.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-packer
@@ -250,7 +250,7 @@ DEPENDENCIES
   openoffice (= 1.2.0)
   openssl (= 1.0.0)
   opera (= 0.2.1)
-  osx (= 2.0.0)
+  osx (= 2.2.1)
   packer (= 1.1.0)
   phantomjs (= 2.0.2)
   pkgconfig (= 1.0.0)
