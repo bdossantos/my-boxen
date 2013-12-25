@@ -77,7 +77,7 @@ class people::bdossantos {
     }
   }
 
-  ruby_install { ['2.0.0-p247', '2.0.0-p353', '1.9.3-p484', ]:
+  ruby_install { ['2.1.0', '2.0.0-p247', '2.0.0-p353', '1.9.3-p484', ]:
     ensure => present,
   }
 
