@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.3.4"
+github "boxen", "3.3.6"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -53,7 +53,7 @@ github "xquartz",    "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "osx",               "2.2.1"
+github "osx",               "2.2.2"
 github "property_list_key", "0.1.0", :repo => "glarizza/puppet-property_list_key"
 github "iterm2",            "1.0.6"
 github "macvim",            "1.0.0"
