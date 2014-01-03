@@ -67,7 +67,7 @@ class people::bdossantos {
     $prefix = "${people::bdossantos::home}/.rubies"
 
     exec { "ruby-install ${ruby}":
-      command   => "ruby-install -i ${prefix}/${ruby} ruby ${ruby}",
+      command   => "ruby-install -i ${prefix}/ruby-${ruby} ruby ${ruby}",
       timeout   => 0,
       creates   => "${prefix}/${ruby}",
       user      => $::luser,
