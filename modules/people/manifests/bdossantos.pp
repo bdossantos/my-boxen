@@ -120,7 +120,12 @@ class people::bdossantos {
   # virtualisation
   include virtualbox
   include vagrant
-  include packer
+
+  homebrew::tap { 'homebrew/binary': } ->
+
+  package { 'packer':
+    ensure => latest,
+  }
 
   # image/video
   include vlc
