@@ -152,7 +152,7 @@ class people::bdossantos {
     'zsh-syntax-highlighting', 'watch', 'stow', 'closure-compiler', 'pv',
     'htmlcompressor', 'moreutils', 'netcat', 'nmap', 'colordiff', 'jq',
     'ncftp', 'spark', 'battery', 'tcpdump', 'cmake', 'readline', 'gnu-sed',
-    'tree', 'pigz', 'reattach-to-user-namespace',
+    'tree', 'pigz', 'reattach-to-user-namespace', 'tmux-mem-cpu-load',
   ]
 
   homebrew::tap { 'Goles/battery': } ->
