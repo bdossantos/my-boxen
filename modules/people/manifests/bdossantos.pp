@@ -69,7 +69,7 @@ class people::bdossantos {
     exec { "ruby-install ${ruby}":
       command   => "ruby-install -i ${prefix}/ruby-${ruby} ruby ${ruby}",
       timeout   => 0,
-      creates   => "${prefix}/${ruby}",
+      creates   => "${prefix}/ruby-${ruby}",
       user      => $::luser,
       logoutput => 'on_failure',
       cwd       => $prefix,
