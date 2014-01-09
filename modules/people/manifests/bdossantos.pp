@@ -110,11 +110,8 @@ class people::bdossantos {
   }
 
   ## phantomJS
-  include phantomjs
-  include phantomjs::1_9_0
-
-  class { 'phantomjs::global':
-    version => '1.9.0',
+  package { 'phantomjs':
+    ensure => latest,
   }
 
   # virtualisation
