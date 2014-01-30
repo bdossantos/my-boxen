@@ -11,7 +11,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.3.6)
+    boxen (3.3.8)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -214,7 +214,7 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
-  boxen (= 3.3.6)
+  boxen (= 3.3.8)
   chrome (= 1.1.2)
   dnsmasq (= 1.0.1)
   dropbox (= 1.1.2)
