@@ -35,6 +35,12 @@ class people::bdossantos {
     path   => "${home}/.oh-my-zsh/custom/pure",
   }
 
+  repository { 'dracula-theme':
+    ensure => 'origin/master',
+    source => 'zenorocha/dracula-theme',
+    path   => "${home}/.dracula-theme",
+  }
+
   exec { 'Install dotfiles':
     command     => 'sh install.sh',
     cwd         => $dotfiles,
