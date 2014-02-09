@@ -126,7 +126,7 @@ class people::bdossantos {
 
   homebrew::tap { 'homebrew/binary': } ->
 
-  package { 'packer':
+  package { ['packer', 'docker', 'boot2docker', ]:
     ensure => latest,
   }
 
