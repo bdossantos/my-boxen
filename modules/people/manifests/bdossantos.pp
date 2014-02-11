@@ -161,7 +161,7 @@ class people::bdossantos {
     'htmlcompressor', 'moreutils', 'netcat', 'nmap', 'colordiff', 'jq',
     'ncftp', 'spark', 'battery', 'tcpdump', 'cmake', 'readline', 'gnu-sed',
     'tree', 'pigz', 'reattach-to-user-namespace', 'tmux-mem-cpu-load',
-    'zopfli', 'tig',
+    'zopfli', 'tig', 'the_silver_searcher',
   ]
 
   homebrew::tap { 'Goles/battery': } ->
