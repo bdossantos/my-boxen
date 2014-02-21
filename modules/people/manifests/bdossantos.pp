@@ -152,6 +152,7 @@ class people::bdossantos {
   include sequel_pro
   include spectacle
   include keepassx
+  include hipchat
   include flux
   include xz
 
