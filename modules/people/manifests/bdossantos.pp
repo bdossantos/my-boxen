@@ -41,6 +41,12 @@ class people::bdossantos {
     path   => "${home}/.dracula-theme",
   }
 
+  repository { 'base16-iterm2':
+    ensure => 'origin/master',
+    source => 'chriskempson/base16-iterm2',
+    path   => "${home}/.base16-iterm2",
+  }
+
   exec { 'Install dotfiles':
     command     => 'sh install.sh',
     cwd         => $dotfiles,
