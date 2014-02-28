@@ -40,7 +40,7 @@ github "gcc",        "2.0.100"
 github "git",        "1.3.7"
 github "homebrew",   "1.6.0"
 github "hub",        "1.1.0"
-github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
+github "inifile",    "1.0.1", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.2"
 github "nodejs",     "3.2.10"
 github "openssl",    "1.0.0"
@@ -53,6 +53,7 @@ github "xquartz",    "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "module-data",       "0.0.1", :repo => "ripienaar/puppet-module-data"
 github "osx",               "2.2.2"
 github "property_list_key", "0.1.0", :repo => "glarizza/puppet-property_list_key"
 github "iterm2",            "1.0.6"
