@@ -176,7 +176,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.0.5)
+    vagrant (3.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
