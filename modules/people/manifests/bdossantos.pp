@@ -88,7 +88,11 @@ class people::bdossantos {
       user      => $::luser,
       logoutput => 'on_failure',
       cwd       => $prefix,
-      require   => File["${prefix}"],
+      require   => [
+        File["${prefix}"],
+        Package['zsh'],
+        Repository['dotfiles'],
+      ],
     }
   }
 
@@ -96,17 +100,24 @@ class people::bdossantos {
     ensure => present,
   }
 
-  package { ['bundler', 'tmuxinator', 'fpm', 'pomo', 'veewee', ]:
-    ensure   => present,
-    provider => 'gem',
+  define gem_install {
+    exec { "gem install ${name}":
+      command   => "chruby-exec ruby -- gem install ${name}",
+      onlyif    => "gem list ${name} -i",
+      timeout   => 0,
+      user      => $::luser,
+      logoutput => 'on_failure',
+      require   => Ruby_install['2.1.1'],
+    }
   }
+
+  gem_install { ['bundler', 'tmuxinator', 'fpm', 'pomo', 'veewee', 'rubocop', ]: }
 
   file { "${home}/.pomo":
     ensure  => link,
     target  => "${home}/Dropbox/.pomo",
     require => [
       Class['dropbox'],
-      Package['pomo'],
     ],
   }
 
