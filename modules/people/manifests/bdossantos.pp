@@ -76,6 +76,12 @@ class people::bdossantos {
     ensure => directory,
   }
 
+  file { "${home}/.ruby-version":
+    ensure  => file,
+    content => 'ruby-2.1.1',
+    require => Ruby_install['2.1.1'],
+  }
+
   # yes, this define is not inside autoload module layout and a class
   define ruby_install($ensure = 'present') {
     $ruby = $name
