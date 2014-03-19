@@ -65,6 +65,11 @@ class people::bdossantos {
   package { ['python', 'python3', ]:
     ensure          => latest,
     install_options => ['--with-brewed-openssl', ],
+  } ->
+
+  package { ['fabric', 'howdoi', ]:
+    ensure   => present,
+    provider => 'pip',
   }
 
   ## ruby
