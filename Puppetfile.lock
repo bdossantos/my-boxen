@@ -76,7 +76,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.6.0)
+    homebrew (1.6.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -237,7 +237,7 @@ DEPENDENCIES
   go (= 1.0.0)
   googledrive (= 1.0.2)
   hipchat (= 1.1.0)
-  homebrew (= 1.6.0)
+  homebrew (= 1.6.1)
   hub (= 1.1.0)
   imagemagick (= 1.2.0)
   imageoptim (= 0.0.2)
@@ -262,7 +262,7 @@ DEPENDENCIES
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   tmux (= 1.0.2)
-  vagrant (= 3.0.5)
+  vagrant (= 3.0.6)
   virtualbox (= 1.0.6)
   vlc (= 1.0.3)
   vundle (= 0.0.1)

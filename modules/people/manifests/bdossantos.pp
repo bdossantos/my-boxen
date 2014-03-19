@@ -62,7 +62,10 @@ class people::bdossantos {
   # programming
 
   ## python
-  include python
+  package { ['python', 'python3', ]:
+    ensure          => latest,
+    install_options => ['--with-brewed-openssl', ],
+  }
 
   ## ruby
   package { ['chruby', 'ruby-install', ]:
