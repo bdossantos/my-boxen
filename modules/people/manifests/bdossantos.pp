@@ -122,7 +122,12 @@ class people::bdossantos {
     }
   }
 
-  gem_install { ['bundler', 'tmuxinator', 'fpm', 'pomo', 'veewee', 'rubocop', ]: }
+  $gems = [
+    'bundler', 'tmuxinator', 'fpm', 'pomo', 'veewee', 'rubocop', 'puppet-lint',
+    'shell_explain',
+  ]
+
+  gem_install { $gems: }
 
   file { "${home}/.pomo":
     ensure  => link,
