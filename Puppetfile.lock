@@ -104,11 +104,6 @@ GITHUBTARBALL
     keepassx (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-macvim
-  specs:
-    macvim (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.2)
@@ -244,7 +239,6 @@ DEPENDENCIES
   inifile (= 1.0.1)
   iterm2 (= 1.0.6)
   keepassx (= 1.0.0)
-  macvim (= 1.0.0)
   module-data (= 0.0.1)
   nginx (= 1.4.2)
   nike_plus_connect (= 0.0.1)

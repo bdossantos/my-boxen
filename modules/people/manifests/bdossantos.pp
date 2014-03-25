@@ -56,8 +56,17 @@ class people::bdossantos {
   }
 
   # editor
-  include macvim
   include vundle
+
+  package { 'macvim':
+    ensure          => latest,
+    require         => Package['python3'],
+    install_options => [
+      '--with-cscope', '--override-system-vim', '--custom-icons',
+      '--with-python3',
+    ],
+  }
+
 
   # programming
 
