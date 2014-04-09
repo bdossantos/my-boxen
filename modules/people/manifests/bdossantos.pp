@@ -123,7 +123,7 @@ class people::bdossantos {
   define gem_install {
     exec { "gem install ${name}":
       command   => "chruby-exec ruby -- gem install ${name}",
-      onlyif    => "gem list ${name} -i",
+      unless    => "chruby-exec ruby -- gem list ${name} -i",
       timeout   => 0,
       user      => $::luser,
       logoutput => 'on_failure',
@@ -132,7 +132,7 @@ class people::bdossantos {
   }
 
   $gems = [
-    'bundler', 'tmuxinator', 'fpm', 'pomo', 'veewee', 'rubocop', 'puppet-lint',
+    'bundler', 'tmuxinator', 'fpm', 'pomo', 'rubocop', 'puppet-lint',
     'shell_explain',
   ]
 
