@@ -47,6 +47,12 @@ class people::bdossantos {
     path   => "${home}/.base16-iterm2",
   }
 
+  repository { 'z':
+    ensure => 'origin/master',
+    source => 'rupa/z',
+    path   => "${home}/.z",
+  }
+
   exec { 'Install dotfiles':
     command     => 'sh install.sh',
     cwd         => $dotfiles,
