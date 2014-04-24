@@ -67,6 +67,16 @@ class people::bdossantos {
     ],
   }
 
+  # fonts
+  file { "${home}/.fonts":
+    ensure => directory,
+  }
+
+  repository { 'powerline-fonts':
+    ensure => 'origin/master',
+    source => 'Lokaltog/powerline-fonts',
+    path   => "${home}/.powerline-fonts",
+  }
 
   # programming
 
