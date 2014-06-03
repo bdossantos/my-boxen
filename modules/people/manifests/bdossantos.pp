@@ -149,7 +149,7 @@ class people::bdossantos {
 
   $gems = [
     'bundler', 'tmuxinator', 'fpm', 'pomo', 'rubocop', 'puppet-lint', 'dotenv',
-    'shell_explain',
+    'shell_explain', 'desktop',
   ]
 
   gem_install { $gems: }
