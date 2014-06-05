@@ -35,10 +35,6 @@ github "boxen", "3.6.0"
 
 github "module-data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
-# Support for default hiera data in modules
-
-github "module-data", "0.0.3", :repo => "ripienaa/puppet-module-data"
-
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
