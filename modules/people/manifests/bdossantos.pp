@@ -132,7 +132,11 @@ class people::bdossantos {
     }
   }
 
-  ruby_install { ['2.1.2', '2.0.0-p353', '2.0.0-p451', '1.9.3-p484', ]:
+  $rubies = [
+    '2.1.2', '2.0.0-p353', '2.0.0-p451', '1.9.3-p484', '1.9.3-p429',
+  ]
+
+  ruby_install { $rubies:
     ensure => present,
   }
 
