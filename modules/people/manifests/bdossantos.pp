@@ -228,7 +228,7 @@ class people::bdossantos {
     'ncftp', 'spark', 'battery', 'tcpdump', 'cmake', 'readline', 'gnu-sed',
     'tree', 'pigz', 'reattach-to-user-namespace', 'tmux-mem-cpu-load',
     'zopfli', 'tig', 'the_silver_searcher', 'autojump', 'cloc', 'ipcalc',
-    'awscli', 'tag',
+    'awscli', 'tag', 'cheat',
   ]
 
   homebrew::tap { 'Goles/battery': } ->
