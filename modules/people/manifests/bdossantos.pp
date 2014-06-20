@@ -74,6 +74,8 @@ class people::bdossantos {
   }
 
   # fonts
+  include fonts
+
   file { "${home}/.fonts":
     ensure => directory,
   }
