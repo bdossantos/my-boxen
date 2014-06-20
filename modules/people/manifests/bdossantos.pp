@@ -249,6 +249,12 @@ class people::bdossantos {
   include osx::global::key_repeat_rate
   include osx::dock::icon_size
 
+  class { 'osx::dock::hot_corners':
+    top_right     => 'Start Screen Saver',
+    bottom_left   => 'Desktop',
+    bottom_right  => 'Application Windows',
+  }
+
   class { 'osx::global::natural_mouse_scrolling':
     enabled => false,
   }
