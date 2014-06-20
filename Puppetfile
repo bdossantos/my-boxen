@@ -63,10 +63,10 @@ github "xquartz",     "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "osx",               "2.2.2"
+github "osx",               "2.7.0"
 github "property_list_key", "0.1.0", :repo => "glarizza/puppet-property_list_key"
 github "iterm2",            "1.0.6"
-github "vundle",            "0.0.1", :repo => "bdossantos/puppet-vundle"
+github "vundle",            "0.0.2", :repo => "bdossantos/puppet-vundle"
 github "virtualbox",        "1.0.6"
 github "vagrant",           "3.0.6"
 github "chrome",            "1.1.2"
