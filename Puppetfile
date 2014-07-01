@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.6.1"
+github "boxen", "3.6.2"
 
 # Support for default hiera data in modules
 
@@ -40,7 +40,7 @@ github "module-data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
 github "dnsmasq",     "1.0.1"
 github "foreman",     "1.2.0"
-github "gcc",         "2.0.101"
+github "gcc",         "2.1.0"
 github "git",         "2.4.0"
 github "go",          "1.1.0"
 github "homebrew",    "1.9.2"
@@ -81,7 +81,6 @@ github "dropbox",           "1.1.2"
 github "imageoptim",        "0.0.2"
 github "googledrive",       "1.0.2"
 github "nike_plus_connect", "0.0.1", :repo => "bdossantos/puppet-module-nike_plus_connect"
-github "python",            "1.3.0"
 github "gimp",              "1.0.0"
 github "xz",                "1.0.0"
 github "imagemagick",       "1.2.0"
