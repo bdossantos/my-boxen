@@ -94,7 +94,7 @@ class people::bdossantos {
     install_options => ['--with-brewed-openssl', ],
   } ->
 
-  package { ['virtualenv', 'fabric', 'pylint', 'flake8', 'howdoi', ]:
+  package { ['virtualenv', 'fabric', 'pylint', 'flake8', 'howdoi', 'cli53', ]:
     ensure   => present,
     provider => 'pip',
   }
