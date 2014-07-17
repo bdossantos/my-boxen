@@ -218,6 +218,7 @@ class people::bdossantos {
   include nike_plus_connect
   include sequel_pro
   include spectacle
+  include gpgtools
   include keepassx
   include hipchat
   include flux
