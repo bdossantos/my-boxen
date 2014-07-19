@@ -61,7 +61,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.4.0)
+    git (2.5.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -106,7 +106,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.0.6)
+    iterm2 (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-keepassx
@@ -191,7 +191,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
-    virtualbox (1.0.6)
+    virtualbox (1.0.13)
 
 GITHUBTARBALL
   remote: boxen/puppet-vlc
@@ -244,7 +244,7 @@ DEPENDENCIES
   foreman (= 1.2.0)
   gcc (= 2.1.0)
   gimp (= 1.0.0)
-  git (= 2.4.0)
+  git (= 2.5.0)
   go (= 1.1.0)
   googledrive (= 1.0.2)
   gpgtools (= 1.0.1)
@@ -254,7 +254,7 @@ DEPENDENCIES
   imagemagick (= 1.2.0)
   imageoptim (= 0.0.2)
   inifile (= 1.0.3)
-  iterm2 (= 1.0.6)
+  iterm2 (= 1.1.2)
   keepassx (= 1.0.0)
   module-data (= 0.0.3)
   nginx (= 1.4.3)
@@ -275,7 +275,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   tmux (= 1.0.2)
   vagrant (= 3.0.6)
-  virtualbox (= 1.0.6)
+  virtualbox (= 1.0.13)
   vlc (= 1.0.3)
   vundle (= 0.0.2)
   xquartz (= 1.1.1)
