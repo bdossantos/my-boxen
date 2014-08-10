@@ -231,10 +231,10 @@ class people::bdossantos {
     'ncftp', 'spark', 'battery', 'tcpdump', 'cmake', 'readline', 'gnu-sed',
     'tree', 'pigz', 'reattach-to-user-namespace', 'tmux-mem-cpu-load',
     'zopfli', 'tig', 'the_silver_searcher', 'autojump', 'cloc', 'ipcalc',
-    'awscli', 'tag', 'cheat',
+    'awscli', 'tag', 'cheat', 'tmux-cssh', 'graphviz', 'peco',
   ]
 
-  homebrew::tap { 'Goles/battery': } ->
+  homebrew::tap { ['Goles/battery', 'peco/peco', ]: } ->
 
   package { $useful:
     ensure => latest,
