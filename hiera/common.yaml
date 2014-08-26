@@ -1,2 +1,4 @@
 ---
 hub::alias_hub_to_git: false
+git::package: 'git'
+git::version: 'latest'
