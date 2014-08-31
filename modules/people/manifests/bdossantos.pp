@@ -53,6 +53,18 @@ class people::bdossantos {
     path   => "${home}/.z",
   }
 
+  file { ["${home}/.tmux", "${home}/.tmux/plugins"]:
+    ensure  => directory,
+    recurse => true,
+  }
+
+  repository { 'tpm':
+    ensure  => 'origin/master',
+    source  => 'tmux-plugins/tpm',
+    path    => "${home}/.tmux/plugins/tpm",
+    require => File["${home}/.tmux/plugins"],
+  }
+
   exec { 'Install dotfiles':
     command     => 'sh install.sh',
     cwd         => $dotfiles,
