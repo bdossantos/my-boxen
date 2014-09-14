@@ -243,7 +243,7 @@ class people::bdossantos {
     'ncftp', 'spark', 'battery', 'tcpdump', 'cmake', 'readline', 'gnu-sed',
     'tree', 'pigz', 'reattach-to-user-namespace', 'tmux-mem-cpu-load',
     'zopfli', 'tig', 'the_silver_searcher', 'autojump', 'cloc', 'ipcalc',
-    'awscli', 'tag', 'cheat', 'tmux-cssh', 'graphviz', 'peco',
+    'awscli', 'tag', 'cheat', 'tmux-cssh', 'graphviz', 'peco', 'ansifilter',
   ]
 
   homebrew::tap { ['Goles/battery', 'peco/peco', ]: } ->
