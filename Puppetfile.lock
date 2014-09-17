@@ -119,11 +119,6 @@ GITHUBTARBALL
     nginx (1.4.3)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (3.8.2)
-
-GITHUBTARBALL
   remote: boxen/puppet-openoffice
   specs:
     openoffice (1.2.0)
@@ -142,11 +137,6 @@ GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
     osx (2.7.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-phantomjs
-  specs:
-    phantomjs (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
@@ -201,7 +191,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
-    xquartz (1.1.1)
+    xquartz (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-xz
@@ -259,12 +249,10 @@ DEPENDENCIES
   module-data (= 0.0.3)
   nginx (= 1.4.3)
   nike_plus_connect (= 0.0.1)
-  nodejs (= 3.8.2)
   openoffice (= 1.2.0)
   openssl (= 1.0.0)
   opera (= 0.2.1)
   osx (= 2.7.1)
-  phantomjs (= 2.1.0)
   pkgconfig (= 1.0.0)
   property_list_key (= 0.1.0)
   repository (= 2.3.0)
@@ -278,7 +266,7 @@ DEPENDENCIES
   virtualbox (= 1.0.13)
   vlc (= 1.0.3)
   vundle (= 0.0.2)
-  xquartz (= 1.1.1)
+  xquartz (= 1.2.0)
   xz (= 1.0.0)
   zsh (= 1.0.0)
 
