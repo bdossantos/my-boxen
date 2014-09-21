@@ -122,8 +122,8 @@ class people::bdossantos {
 
   file { "${home}/.ruby-version":
     ensure  => file,
-    content => 'ruby-2.1.2',
-    require => Ruby_install['2.1.2'],
+    content => 'ruby-2.1.3',
+    require => Ruby_install['2.1.3'],
   }
 
   # yes, this define is not inside autoload module layout and a class
@@ -147,7 +147,7 @@ class people::bdossantos {
   }
 
   $rubies = [
-    '2.1.2', '2.0.0-p353', '2.0.0-p451', '1.9.3-p484', '1.9.3-p429',
+    '2.1.3', '2.1.2', '2.0.0-p353', '2.0.0-p451', '1.9.3-p484', '1.9.3-p429',
   ]
 
   ruby_install { $rubies:
