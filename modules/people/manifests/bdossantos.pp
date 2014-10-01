@@ -244,7 +244,7 @@ class people::bdossantos {
     'tree', 'pigz', 'reattach-to-user-namespace', 'tmux-mem-cpu-load',
     'zopfli', 'tig', 'the_silver_searcher', 'autojump', 'cloc', 'ipcalc',
     'awscli', 'tag', 'cheat', 'tmux-cssh', 'graphviz', 'peco', 'ansifilter',
-    'sshrc',
+    'sshrc', 'z', 'v',
   ]
 
   homebrew::tap { ['Goles/battery', 'peco/peco', ]: } ->
